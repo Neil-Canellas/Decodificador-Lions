@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador Lions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Styles/stylesLions.css">
+    </head>
+        <body>
+            <header class="cabeçalho">
+                <nav class="cabeçalho-menu">
+                    <a class="imagem-home" href="index.html"><max-height><img src="./Images/Capa Lions-no-detalhes-sem-fundo.png" width="200" height="100" alt="Logo tipo da Lions"></max-height>
+                    </a>
+                </nav>
+            </header>
+            <main class="apresentação">
+                
+                <section class="corpo-2">
+                    <h1 class="corpo-titulo">Decodificador Lions</h1>
+                    <label class="corpo-titulo"></label>
+                    <textarea id="caixa-texto1" class="mensagem1" cols="41" rows="4" placeholder="Digite seu texto">
+                    </textarea>
+
+                    <div class="texto-atençao">
+                        <h6 class="texto-aviso">Digite apenas letras minusculas e sem acento</h6>
+                    </div>
+                    <div class="corpo-botao">
+                        <button class="criptografar" onclick="botaocripto()">Criptografar</button>
+                        <button class="descriptografar" onclick="botaodescripto()">Descriptografar</button>
+                    </div>
+                    
+                </section>
+                
+                <section class="corpo-2">
+                    <label></label>
+                    <textarea id="mensagem" class="mensagem2" cols="20" rows="10">
+
+                    </textarea>
+                    <button class="copiar">Copiar</button>
+                </section>
+
+            </main>
+            <script src="./javascript/criptografia.js"></script>
+            <footer>
+                <p class="rodape">Desenvolvido por Neil Luís - Lions</p>
+            </footer>
+    
+        </body>
+</html>

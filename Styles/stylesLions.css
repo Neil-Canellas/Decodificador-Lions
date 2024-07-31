@@ -1,0 +1,238 @@
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: #0A3871;
+}
+
+* {
+    background: var(--cor-primaria);
+    /*font-family: "Playwrite AR", cursive;*/
+    font-weight: 400;
+    font-size: 1.50rem;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+.imagem-home {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.corpo-titulo {
+    color: var(--cor-secundaria);
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto-aviso {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+.mensagem1 {
+    border: none;
+    color: var(--cor-secundaria);
+    margin-top: 90px;
+    text-transform: lowercase;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: var(--cor-secundaria);
+}
+
+.mensagem1:focus {
+    outline: none;
+}
+
+.mensagem2 {
+    background: var(--cor-secundaria);
+    background-image: url(/Images/rosto-leao-sem-fundo.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 450px 450px;
+    border-radius: 24px;
+    color: var(--cor-terciaria);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    background-position: center;
+}
+
+.mensagem1:not(:empty) ~ .mensagem2 {
+    background-image: none;
+}
+
+.corpo-botao {
+    display: flex;
+    margin-top: 18px;
+}
+
+.criptografar {
+    background-color: var(--cor-terciaria) !important;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.descriptografar {
+    background: var(--cor-secundaria);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 24px;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.copiar {
+    background: var(--cor-secundaria);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 24px;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 148px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    margin-left: 80px;
+    text-align: center;
+    font-size: 12px;
+    padding: 11px;
+}
+
+@media (max-width: 547px) {
+    :root {
+        --cor-primaria: black;
+        --cor-secundaria: white;
+        --cor-terciaria: #0A3871;
+    }
+
+    * {
+        background: var(--cor-primaria);
+        /*font-family: "Playwrite AR", cursive;*/
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        box-sizing: border-box;
+    }
+
+    .imagem-home {
+        margin-left: 10px;
+        padding-top: 10px;
+        width: 20%; /* Ajuste a largura da imagem */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column; /* Organize os elementos em coluna */
+        margin: 0 10px; /* Adicione margem esquerda e direita */
+    }
+
+    .corpo-titulo {
+        color: var(--cor-secundaria);
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .texto-aviso {
+        color: var(--cor-secundaria);
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+
+    .mensagem1 {
+        border: none;
+        color: var(--cor-secundaria);
+        margin-top: 20px;
+        text-transform: lowercase;
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 20px;
+        width: 100%; 
+        padding: 10px; 
+        resize: vertical; 
+    }
+
+    ::placeholder {
+        color: var(--cor-secundaria);
+    }
+
+    .mensagem1:focus {
+        outline: none;
+    }
+
+    .mensagem2 {
+        background: var(--cor-secundaria);
+        background-image: url(/Images/rosto-leao-sem-fundo.png);
+        background-repeat: no-repeat;
+        border: none;
+        background-size: cover;
+        border-radius: 24px;
+        color: var(--cor-terciaria);
+        margin: 10px; 
+        padding: 10px;
+        position: relative;
+        background-position: center;
+        width: calc(100% - 20px); 
+    }
+
+    .mensagem1:not(:empty) ~ .mensagem2 {
+        background-image: none;
+    }
+
+    .corpo-botao {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .criptografar,
+    .descriptografar,
+    .copiar {
+        background-color: var(--cor-terciaria);
+        border: 1px solid var(--cor-terciaria);
+        border-radius: 24px;
+        color: var(--cor-secundaria);
+        cursor: pointer;
+        height: 67px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .descriptografar {
+        background: var(--cor-secundaria);
+        color: var(--cor-terciaria);
+    }
+
+    .copiar {
+        background: var(--cor-secundaria);
+        color: var(--cor-terciaria);
+    }
+
+    .rodape {
+        margin: 0 10px;
+        font-size: 10px;
+        padding: 5px;
+    }
+}
